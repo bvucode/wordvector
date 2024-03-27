@@ -1,2 +1,2 @@
-# tf-idf with ngrams
+# tf-idf with n-grams
 
