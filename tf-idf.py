@@ -1,14 +1,14 @@
 import math
 
-class WordVector:
-    """класс для создания tf, idf, tf-idf с ngrams"""
+class Tfidf:
+    """tf, idf, tf-idf with n-grams"""
     def __init__(self, getlist, tfidf = "tf-idf", ngrams = 1):
         self.getlist = getlist
         self.tfidf = tfidf
         self.ngrams = ngrams
 
     def indexing(self, arg):
-        """индексация"""
+        """memoization"""
         self.arg = arg
         self.ind = 0
         memo = {}
@@ -42,7 +42,7 @@ class WordVector:
         return nlist
 
     def load(self):
-        """метод получения списка с tf, idf, tf-idf с ngrams"""
+        """method return dictionary of words with tf, idf, tf-idf with n-grams"""
         kdict = {}
         instv = []
     
